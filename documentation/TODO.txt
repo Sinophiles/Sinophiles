@@ -1,0 +1,4 @@
+0) installer express (à faire depuis la racine du projet)
+1) installer ejs (à faire depuis la racine du projet)
+
+2) mettre à jour le package .json

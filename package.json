@@ -1,0 +1,9 @@
+{
+  "name" : "Sinophiles",
+  "version" : "0.0.1",
+  "description" : "Apprentissage de la langue et de la culture chinoise",
+  "scripts": {
+    "start": "node server"
+  },
+  "dependencies" : {}
+}

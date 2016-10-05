@@ -1,0 +1,4 @@
+
+> Sinophiles@0.0.1 start C:\Applications\Sinophiles
+> node server
+

@@ -1,0 +1,25 @@
+/*!
+ * Navbar customization
+ */
+
+.navbar-custom {
+    background-color:#CC0000;
+	border-color: #CC0000;
+}
+.navbar-custom  .navbar-brand {
+    color:#FFFFFF;
+}
+
+.navbar-custom .nav > li > a:focus,
+.navbar-custom .nav > li > a:hover {
+  color: white;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+.navbar-custom .nav > li > a {
+    color: white;
+    float: none;
+    text-decoration: none;
+    text-shadow: 0 0px 0 #ffffff;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+	
+	
+
+    <!-- Custom CSS -->
+    <link href="public/stylesheets/navbar-custom.css" rel="stylesheet">
+    <link href="public/stylesheets/thumbnail-custom.css" rel="stylesheet">
+    <link href="public/stylesheets/others.css" rel="stylesheet">
+	<link href="public/stylesheets/footer.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<style type="text/css">
+	
+	.p1 {
+    text-align:center;
+	font-family: DFXingShuMedium1B; 
+    font-size: 100px;
+    }
+/* Normal";*/
+	.p2 {
+  font-family: "SimSun Normal"; /*Semble être la police chinoise par défaut*/
+  font-size: 100px;
+   }
+   
+.p3 {
+  font-family: "Microsoft JhengHei";
+    font-size: 100px;
+}
+
+.ch1{
+  font-family: DFXingShuMedium1B;
+   font-size: 100px;
+}
+
+   
+	 #aquarius { 
+	   position: absolute;
+	   left: 600px; 
+	   top: 260px;
+	   border-radius: 50%;
+	   width: 50px;
+	   height: 50px; /* width and height can be anything, as long as they're equal */
+       background-image: url("../../public/images/red-fishes.jpg"); /* 1049 x 764 */
+	   background-repeat: no-repeat;
+       background-attachment: fixed; /* This property sets whether a background image is fixed or scrolls with the rest of the page */
+       background-position: 100px -240px; /* left, top */
+
+	   }
+	   
+ </style>
+</head>
+
+
+<body>
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+    <main>
+     <div class="container">
+      <div class="row">
+   	   <div id="aquarius"></div>
+				<!--
+			   <br/>   <br/>   <br/>
+				  <div class="p1">sdsqz</div>
+				  <div class="p1">efghi</div>
+				  <div class="p1">jklmn</div>
+					-->
+     </div>
+	</div>
+   </main>
+
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+    
+	
+	<!-- jQuery -->
+    <script src="../../public/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="..\..\node_modules\bootstrap\3.3.7\js\bootstrap.min.js"></script>
+   <script type="text/javascript">
+	  $(function(){
+	    function move() {
+	      $('#aquarius').animate({'height': '+=900', 'top': '-=450', 'width' : '+=900', 'left': '-=450'}, 16000);
+	    };
+	  
+	    function unmove() {
+	      $('#aquarius').animate({'height': '-=900', 'top': '+=450', 'width' : '-=900', 'left': '+=450'}, 8000);
+	    };
+		
+		$("#aquarius").mouseenter(function() {
+		  move();
+		  unmove();
+		});
+	
+	  });
+  </script>
+ </body>
+</html>
+
